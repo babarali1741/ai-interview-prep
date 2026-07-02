@@ -45,7 +45,7 @@ async function registerUserController(req, res) {
     res.cookie("token", token, {
         httpOnly: true, // JS se cookie access nahi hogi, XSS se safe
         sameSite: "lax",
-        secure: process.env.NODE_ENV === "production" // localhost pe http chalega, production mein https zaroori
+        secure: process.env.NODE_ENV === "production" //  pe http chalega, production mein https zaroori
     })
 
 
